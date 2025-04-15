@@ -23,3 +23,23 @@ pip install --break-system-packages paquete
 ```
 pip install --break-system-packages pandas
 ```
+
+## Uso:
+```
+idle programa.py
+```
+
+### o
+```
+nano programa.py
+```
+
+O el editor que uses. Luego compilas el video:
+```
+manim -pqm programa.py video
+```
+
+# Docs:
+- [Example Gallery](https://docs.manim.community/en/stable/examples.html)
+- [Tutorials & Guides](https://docs.manim.community/en/stable/tutorials_guides.html)
+- [Reference Manual](https://docs.manim.community/en/stable/reference.html)

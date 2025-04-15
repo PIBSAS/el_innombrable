@@ -18,7 +18,7 @@ curl -sSL https://raw.githubusercontent.com/PIBSAS/el_innombrable/main/innombrab
 pip install --break-system-packages paquete
 ```
 
-### Ejemplo inmstalar pandas:
+### Ejemplo instalar pandas:
 
 ```
 pip install --break-system-packages pandas
@@ -36,7 +36,7 @@ nano programa.py
 
 O el editor que uses. Luego compilas el video:
 ```
-manim -pqm programa.py video
+manim -pqm programa.py nombre_de_la_clase
 ```
 
 # Docs:

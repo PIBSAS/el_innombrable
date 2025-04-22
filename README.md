@@ -104,3 +104,87 @@ sudo apt update && sudo apt full-upgrade -y && sudo apt install -y kali-win-kex
  kex --fullscreen
  ````
 
+
+# Cómo elimino esta basura!!!:
+
+````
+wsl --unregister kali-linux
+````
+
+
+# Y si instale otra distro?:
+- Te fijas cuales tenes instaladas, de ahí obtenes el nombre.
+
+````
+wsl --list
+````
+
+Una vez que sabes su "nombre":
+
+````
+wsl --unregister nombre
+````
+
+
+# Como veo cuales puedo instalar con el comando wsl --install?:
+
+````
+wsl --list --online
+````
+
+Instalas indicando el nombre, como con kali-linux.
+
+# Como instalo una que sé que está en Microsoft Windows Store usando winget?:
+- Debes primero buscar o su nombre, o wsl, para que te tire todas los OS que estan en el Stroe, ojo, existen apps tambien
+
+````
+winget search "Winch"
+````
+
+En los resultados te sale que su nombre es "Winch WSL", si te salen nombres repetidos, usas la ID. Por lo tanto lo instalas con:
+
+````
+winget install "Winch OS"
+````
+
+
+# Como lo elimmino?
+- Como todo lo que tengas instalado con winget, incluidas apps que ya tengas en el sistema(bloatware).
+
+````
+winget uninstall "Winch OS"
+````
+
+
+# Que pasa si search me dice que tiene la app/OS en msstore y en winget?
+- En ese caso, pasa por ejemplo con OBS Studio.
+
+````
+winget search "OBS studio"
+````
+
+Te devuelve:
+
+````
+Nombre                   Id                       Versión Coincidencia            Origen
+-----------------------------------------------------------------------------------------
+OBS Studio               XPFFH613W8V6LV           Unknown                         msstore
+OBS Studio               OBSProject.OBSStudio     31.0.3  ProductCode: obs studio winget
+OBS Studio Beta          OBSProject.OBSStudio.Pr… 30.1.0                          winget
+AMD Encoder for OBS Stu… OBSProject.obs-amd-enco… 2.6.0.0                         winget
+````
+
+En estos casos o usas el Id, o indicas el Origen(Source), ejemplo desde msstore:
+
+````
+winget install "OBS Studio" -s msstore
+````
+
+
+# Como veo lo que tengo instalado en mi sistema?:
+
+````
+winget list
+````
+
+Y usas ```winget uninstall nombre/id ``` para eliminar, del bloatware que viene, la mayoria podes eliminar, pero ojo, con cuales, mejor googlear.

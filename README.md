@@ -148,7 +148,7 @@ winget install "Winch OS"
 ````
 
 
-# Como lo elimmino?
+# Como lo elimino?
 - Como todo lo que tengas instalado con winget, incluidas apps que ya tengas en el sistema(bloatware).
 
 ````

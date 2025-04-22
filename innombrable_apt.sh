@@ -12,7 +12,7 @@ echo "LANGUAGE configurado como en_US:en"
 
 # Instalar las dependencias de Manim y otras herramientas necesarias en una sola línea
 echo "Instalando dependencias..."
-sudo apt install -y build-essential python3-dev python3-pip python3-venv libcairo2-dev libpango1.0-dev ffmpeg texlive-full imagemagick vlc python3-tk
+sudo apt install -y build-essential python3-dev python3-pip python3-venv libcairo2-dev libpango1.0-dev ffmpeg texlive-full imagemagick vlc python3-tk idle
 
 # Instalar Manim y sus dependencias usando pip
 echo "Instalando Manim y sus dependencias..."
